@@ -64,9 +64,9 @@
   "secondary_background": "#3c2944",
   "button_background": "#41cf40",
   "button_text_color": null,
-  "text_color": "#ff0000",
+  "text_color": "#ffffff",
   "color_highlight_text": "#fdcd0a",
-  "color_main_btn_text": "#ffffff",
+  "color_main_btn_text": "#361d72",
   "cta_background": "#0055ff",
   "logo": {
     "url": "/uploads/5db7255f6623c1b43c97dc867f14c1b2.webp"
@@ -191,8 +191,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-06-17T15:45:52.926Z",
+  "_generated_at": "2026-06-17T16:07:00.101Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-06-17T15:45:53.497Z",
-  "_deploy_trigger": "megx4"
+  "_last_deploy": "2026-06-17T16:07:00.655Z",
+  "_deploy_trigger": "ggdzuc"
 }
