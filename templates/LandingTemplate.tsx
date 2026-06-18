@@ -1535,6 +1535,8 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                             key={item.id || index}
                             href={item.link || '#'}
                             className="footer-certification-link"
+                            target="_blank"
+                            rel="nofollow"
                         >
                           <img
                               src={item.imageUrl}

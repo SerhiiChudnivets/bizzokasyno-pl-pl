@@ -1614,6 +1614,8 @@ export default function TupchiyTemplate() {
                               key={item.id || index}
                               href={item.link || '#'}
                               className="footer-certification-link"
+                              target="_blank"
+                              rel="nofollow"
                           >
                             <img
                                 src={item.imageUrl}
