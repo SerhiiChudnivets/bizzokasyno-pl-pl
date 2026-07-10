@@ -1,7 +1,7 @@
 {
   "name": "bizzokasyno-pl.pl",
   "site_name": "Bizzo Casino ™ – Oficjalna Strona w Polsce",
-  "html_head": "<meta name=\"google-site-verification\" content=\"aQSKbCXAQq3g9gRA9KWtyiq2_AbWHwC0AvwF3Fe5Yyc\" />\n<link rel=\"canonical\" href=\"https://bizzokasyno-pl.pl/\">",
+  "html_head": "<meta name=\"google-site-verification\" content=\"aQSKbCXAQq3g9gRA9KWtyiq2_AbWHwC0AvwF3Fe5Yyc\" />\n<link rel=\"canonical\" href=\"https://bizzokasyno-pl.pl/\" />",
   "url": "bizzokasyno-pl.pl",
   "template": "tupchiy",
   "language_code": "pl",
@@ -82,6 +82,7 @@
   "bonus_title": "Bizzo bonusy i promocje",
   "get_bonus_btn_text": "Odbierz bonus",
   "redirect_link": "/play/",
+  "home_name": null,
   "subdomains": null,
   "accent_color": "#d4af37",
   "main_background": "#2b1234",
@@ -98,9 +99,7 @@
   "popup_logo": {
     "url": "/uploads/5db7255f6623c1b43c97dc867f14c1b2.webp"
   },
-  "main_background_img": {
-    "url": "/uploads/9038e6a6939d314e64ea00c7a87b2d69.webp"
-  },
+  "main_background_img": null,
   "header_menu": [
     {
       "link": "/play/",
@@ -215,8 +214,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-06-18T13:34:52.923Z",
+  "_generated_at": "2026-07-10T12:03:12.288Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-06-18T13:34:53.561Z",
-  "_deploy_trigger": "kn3iuc"
+  "_last_deploy": "2026-07-10T12:03:12.859Z",
+  "_deploy_trigger": "8phmms"
 }
