@@ -98,7 +98,7 @@
   "button_text_color": null,
   "text_color": "#ffffff",
   "color_highlight_text": "#fdcd0a",
-  "color_main_btn_text": "#361d72",
+  "color_main_btn_text": "#eb0000",
   "cta_background": "#0055ff",
   "logo": {
     "url": "/uploads/5db7255f6623c1b43c97dc867f14c1b2.webp"
@@ -223,8 +223,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-07-10T12:17:36.191Z",
+  "_generated_at": "2026-07-10T12:25:02.018Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-07-10T12:17:36.795Z",
-  "_deploy_trigger": "zrwfon"
+  "_last_deploy": "2026-07-10T12:25:02.572Z",
+  "_deploy_trigger": "rjapc"
 }
