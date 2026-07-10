@@ -89,7 +89,7 @@
   "bonus_title": "Bizzo bonusy i promocje",
   "get_bonus_btn_text": "Odbierz bonus",
   "redirect_link": "/play/",
-  "home_name": null,
+  "home_name": "Bizzo Casino",
   "subdomains": null,
   "accent_color": "#d4af37",
   "main_background": "#2b1234",
@@ -223,8 +223,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-07-10T12:14:26.882Z",
+  "_generated_at": "2026-07-10T12:17:36.191Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-07-10T12:14:27.419Z",
-  "_deploy_trigger": "kzmkyc"
+  "_last_deploy": "2026-07-10T12:17:36.795Z",
+  "_deploy_trigger": "zrwfon"
 }
