@@ -35,6 +35,7 @@ interface PageData {
   seo_description?: string
   html_head?: string
   htmlHead?: string
+  htmlhead?: string
   hero_title?: string
   hero_subtitle?: string
   hero_badge?: string
@@ -143,6 +144,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     content: data.content,
     html_head: data.html_head,
     htmlHead: data.htmlHead,
+    htmlhead: data.htmlhead,
     seo_title: data.seo_title,
     seoTitle: data.seoTitle,
     seo_description: data.seo_description,

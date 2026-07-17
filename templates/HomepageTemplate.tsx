@@ -57,6 +57,7 @@ interface PageData {
   seoDescription?: string
   html_head?: string
   htmlHead?: string
+  htmlhead?: string
   breadcrumbs?: boolean
   home_name?: string
   hero_title?: string
@@ -121,6 +122,7 @@ interface SiteData {
   home_name?: string
   html_head?: string
   htmlHead?: string
+  htmlhead?: string
   seo_title?: string
   seoTitle?: string
   seo_description?: string
@@ -533,7 +535,11 @@ const styles = `
 
   @media (max-width: 768px) {
     html, body { overflow-x: hidden; }
-    header { backdrop-filter: none; }
+    header {
+      position: fixed; top: 0; left: 0; right: 0;
+      backdrop-filter: none; z-index: 6000;
+    }
+    header + * { margin-top: 150px; }
     .header-content {
       position: relative; flex-direction: column; justify-content: center;
       gap: 0.75rem; padding: 1rem 3.25rem 1rem;
@@ -598,7 +604,15 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null)
 
-  const htmlHeadContent = page.html_head || page.htmlHead || site.html_head || site.htmlHead || ''
+  const getHtmlHeadContent = () => {
+    const pageHtmlHead = [page.html_head, page.htmlHead, page.htmlhead]
+      .find((value) => typeof value === 'string' && value.trim())
+    const siteHtmlHead = [site.html_head, site.htmlHead, site.htmlhead]
+      .find((value) => typeof value === 'string' && value.trim())
+
+    return pageHtmlHead || siteHtmlHead || ''
+  }
+  const htmlHeadContent = getHtmlHeadContent()
   const extractMetaDescription = (html: string): string => {
     if (!html) return ''
     const descriptionMatch =
@@ -871,8 +885,6 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
                         <a
                           href={item.link && item.link.trim() ? item.link : redirectLink}
                           className="nav-link"
-                          target={item.open_in_new_tab ? '_blank' : '_self'}
-                          rel={item.open_in_new_tab ? 'noopener noreferrer' : undefined}
                         >
                           {item.label}
                           {item.submenu && item.submenu.length > 0 && <span className="menu-arrow">{'\u25BC'}</span>}
@@ -883,8 +895,6 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
                               <a
                                 key={subitem.id || subindex}
                                 href={subitem.link && subitem.link.trim() ? subitem.link : redirectLink}
-                                target={subitem.open_in_new_tab ? '_blank' : '_self'}
-                                rel={subitem.open_in_new_tab ? 'noopener noreferrer' : undefined}
                               >
                                 {subitem.label}
                               </a>
@@ -904,12 +914,12 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
               </nav>
               <div className="header-buttons">
                 {loginText && (
-                  <button className="btn btn-outline" onClick={() => { window.open(redirectLink || '/', '_blank') }}>
+                  <button className="btn btn-outline" onClick={() => { window.location.href = redirectLink || '/' }}>
                     {loginText}
                   </button>
                 )}
                 {registerText && (
-                  <button className="btn btn-primary" onClick={() => { window.open(redirectLink || '/', '_blank') }}>
+                  <button className="btn btn-primary" onClick={() => { window.location.href = redirectLink || '/' }}>
                     {registerText}
                   </button>
                 )}
@@ -967,7 +977,7 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
               </div>
               <button
                 className="btn btn-primary btn-lg btn-hero color-main-btn"
-                onClick={() => { window.open(redirectLink || '/', '_blank') }}
+                onClick={() => { window.location.href = redirectLink || '/' }}
               >
                 {ctaText}
               </button>
@@ -1000,7 +1010,7 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
                         <div className="slot-overlay">
                           <div className="slot-background">
                             <span className="slot-name">{slot.Name || `Slot ${index + 1}`}</span>
-                            <button className="btn btn-primary" onClick={() => slot.link && window.open(slot.link, '_blank')}>Play</button>
+                            <button className="btn btn-primary" onClick={() => slot.link && (window.location.href = slot.link)}>Play</button>
                           </div>
                         </div>
                       </div>
@@ -1136,8 +1146,6 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
                         <a
                           href={item.link && item.link.trim() ? item.link : redirectLink}
                           className="footer-link"
-                          target={(item.open_in_new_tab || item.openInNewTab) ? '_blank' : '_self'}
-                          rel={(item.open_in_new_tab || item.openInNewTab) ? 'noopener noreferrer' : undefined}
                         >
                           {item.label}
                         </a>
@@ -1147,8 +1155,6 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
                               <a
                                 key={subitem.id || subindex}
                                 href={subitem.link && subitem.link.trim() ? subitem.link : redirectLink}
-                                target={(subitem.open_in_new_tab || subitem.openInNewTab) ? '_blank' : '_self'}
-                                rel={(subitem.open_in_new_tab || subitem.openInNewTab) ? 'noopener noreferrer' : undefined}
                               >
                                 {subitem.label}
                               </a>
@@ -1179,7 +1185,7 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
               )}
               <div className="popup-text">{popupText}</div>
               <div className="popup-buttons">
-                <button className="btn btn-primary color-main-btn" onClick={() => { window.open(redirectLink || '/', '_blank') }}>
+                <button className="btn btn-primary color-main-btn" onClick={() => { window.location.href = redirectLink || '/' }}>
                   {getBonusBtn}
                 </button>
                 <button

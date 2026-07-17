@@ -28,6 +28,7 @@ interface PageData {
   name: string
   html_head?: string
   htmlHead?: string
+  htmlhead?: string
   url: string
   template?: string
   language_code: string
@@ -100,6 +101,7 @@ interface SiteData {
   name: string
   html_head?: string
   htmlHead?: string
+  htmlhead?: string
   url: string
   template?: string
   language_code: string
@@ -1118,7 +1120,16 @@ const styles = `
     }
 
     header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       backdrop-filter: none;
+      z-index: 6000;
+    }
+
+    header + * {
+      margin-top: 150px;
     }
 
     .header-content {
@@ -1292,7 +1303,15 @@ const styles = `
 export default function LandingTemplate({ page, site }: { page: PageData; site: SiteData }) {
   const siteName = site.site_name || site.name
   const data: PageData = require('../data.json')
-  const htmlHeadContent = page.html_head || page.htmlHead || '';
+  const getHtmlHeadContent = () => {
+    const pageHtmlHead = [page.html_head, page.htmlHead, page.htmlhead]
+        .find((value) => typeof value === 'string' && value.trim())
+    const dataHtmlHead = [data.html_head, data.htmlHead, data.htmlhead]
+        .find((value) => typeof value === 'string' && value.trim())
+
+    return pageHtmlHead || dataHtmlHead || ''
+  }
+  const htmlHeadContent = getHtmlHeadContent()
   const extractMetaDescription = (html: string): string => {
     if (!html) return ''
     const descriptionMatch =
@@ -1504,8 +1523,6 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                           <a
                               href={item.link && item.link.trim() ? item.link : redirectLink}
                               className="nav-link"
-                              target={item.open_in_new_tab ? '_blank' : '_self'}
-                              rel={item.open_in_new_tab ? 'noopener noreferrer' : undefined}
                           >
                             {item.label}
                             {item.submenu && item.submenu.length > 0 && (
@@ -1518,8 +1535,6 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                                     <a
                                         key={subitem.id || subindex}
                                         href={subitem.link && subitem.link.trim() ? subitem.link : redirectLink}
-                                        target={subitem.open_in_new_tab ? '_blank' : '_self'}
-                                        rel={subitem.open_in_new_tab ? 'noopener noreferrer' : undefined}
                                     >
                                       {subitem.label}
                                     </a>
@@ -1543,7 +1558,7 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                       className="btn btn-outline"
                       onClick={() => {
                         const link = redirectLink ? redirectLink : '/';
-                        window.open(link, '_blank');
+                        window.location.href = link;
                       }}
                   >
                     {loginText}
@@ -1555,7 +1570,7 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                       className="btn btn-primary"
                       onClick={() => {
                         const link = redirectLink ? redirectLink : '/';
-                        window.open(link, '_blank');
+                        window.location.href = link;
                       }}
                   >
                     {registerText}
@@ -1618,7 +1633,7 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                 className="btn btn-primary btn-lg btn-hero color-main-btn"
                 onClick={() => {
                   const link = redirectLink ? redirectLink : '/';
-                  window.open(link, '_blank');
+                  window.location.href = link;
                 }}
             >
               {ctaText}
@@ -1748,8 +1763,6 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                           <a
                               href={item.link && item.link.trim() ? item.link : redirectLink}
                               className="footer-link"
-                              target={(item.open_in_new_tab || item.openInNewTab) ? '_blank' : '_self'}
-                              rel={(item.open_in_new_tab || item.openInNewTab) ? 'noopener noreferrer' : undefined}
                           >
                             {item.label}
                           </a>
@@ -1759,8 +1772,6 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                                     <a
                                         key={subitem.id || subindex}
                                         href={subitem.link && subitem.link.trim() ? subitem.link : redirectLink}
-                                        target={(subitem.open_in_new_tab || subitem.openInNewTab) ? '_blank' : '_self'}
-                                        rel={(subitem.open_in_new_tab || subitem.openInNewTab) ? 'noopener noreferrer' : undefined}
                                     >
                                       {subitem.label}
                                     </a>
@@ -1802,7 +1813,7 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
                   className="btn btn-primary color-main-btn"
                   onClick={() => {
                     const link = redirectLink ? redirectLink : '/';
-                    window.open(link, '_blank');
+                    window.location.href = link;
                   }}
               >
                 {getBonusBtn}

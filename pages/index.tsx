@@ -1008,7 +1008,16 @@ const styles = `
     }
 
     header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
       backdrop-filter: none;
+      z-index: 6000;
+    }
+
+    header + * {
+      margin-top: 150px;
     }
 
     .header-content {
@@ -1462,8 +1471,6 @@ export default function TupchiyTemplate() {
                             <a
                                 href={item.link && item.link.trim() ? item.link : redirectLink}
                                 className="nav-link"
-                                target={item.open_in_new_tab ? '_blank' : '_self'}
-                                rel={item.open_in_new_tab ? 'noopener noreferrer' : undefined}
                             >
                               {item.label}
                               {item.submenu && item.submenu.length > 0 && (
@@ -1476,8 +1483,6 @@ export default function TupchiyTemplate() {
                                       <a
                                           key={subitem.id || subindex}
                                           href={subitem.link && subitem.link.trim() ? subitem.link : redirectLink}
-                                          target={subitem.open_in_new_tab ? '_blank' : '_self'}
-                                          rel={subitem.open_in_new_tab ? 'noopener noreferrer' : undefined}
                                       >
                                         {subitem.label}
                                       </a>
@@ -1501,7 +1506,7 @@ export default function TupchiyTemplate() {
                         className="btn btn-outline"
                         onClick={() => {
                           const link = redirectLink ? redirectLink : '/';
-                          window.open(link, '_blank');
+                          window.location.href = link;
                         }}
                     >
                       {loginText}
@@ -1513,7 +1518,7 @@ export default function TupchiyTemplate() {
                         className="btn btn-primary"
                         onClick={() => {
                           const link = redirectLink ? redirectLink : '/';
-                          window.open(link, '_blank');
+                          window.location.href = link;
                         }}
                     >
                       {registerText}
@@ -1567,7 +1572,7 @@ export default function TupchiyTemplate() {
                   className="btn btn-primary btn-lg btn-hero color-main-btn"
                   onClick={() => {
                     const link = redirectLink ? redirectLink : '/';
-                    window.open(link, '_blank');
+                    window.location.href = link;
                   }}
               >
                 {ctaText}
@@ -1611,7 +1616,7 @@ export default function TupchiyTemplate() {
                             <div className="slot-overlay">
                               <div className="slot-background">
                                 <span className="slot-name">{slot.Name || `Slot ${index + 1}`}</span>
-                                <button className="btn btn-primary" onClick={() => slot.link && window.open(slot.link, '_blank')}>
+                                <button className="btn btn-primary" onClick={() => slot.link && (window.location.href = slot.link)}>
                                   Play
                                 </button>
                               </div>
@@ -1823,8 +1828,6 @@ export default function TupchiyTemplate() {
                             <a
                                 href={item.link && item.link.trim() ? item.link : redirectLink}
                                 className="footer-link"
-                                target={(item.open_in_new_tab || item.openInNewTab) ? '_blank' : '_self'}
-                                rel={(item.open_in_new_tab || item.openInNewTab) ? 'noopener noreferrer' : undefined}
                             >
                               {item.label}
                             </a>
@@ -1834,8 +1837,6 @@ export default function TupchiyTemplate() {
                                       <a
                                           key={subitem.id || subindex}
                                           href={subitem.link && subitem.link.trim() ? subitem.link : redirectLink}
-                                          target={(subitem.open_in_new_tab || subitem.openInNewTab) ? '_blank' : '_self'}
-                                          rel={(subitem.open_in_new_tab || subitem.openInNewTab) ? 'noopener noreferrer' : undefined}
                                       >
                                         {subitem.label}
                                       </a>
@@ -1878,7 +1879,7 @@ export default function TupchiyTemplate() {
                     className="btn btn-primary color-main-btn"
                     onClick={() => {
                       const link = redirectLink ? redirectLink : '/';
-                      window.open(link, '_blank');
+                      window.location.href = link;
                     }}
                 >
                   {getBonusBtn}
