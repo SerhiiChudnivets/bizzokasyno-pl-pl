@@ -175,32 +175,7 @@
       "image": "/uploads/56780f43b603d1e6d030c6d29a832522.webp"
     }
   ],
-  "Slots": [
-    {
-      "link": "/play/",
-      "logo": "/uploads/7f309e4bd8364293b39892b0ab560ff8.webp",
-      "name": "Sweet Bonanza Dice",
-      "Name": "Sweet Bonanza Dice"
-    },
-    {
-      "link": "/play/",
-      "logo": "/uploads/dffb88a97c98bd864a4e5286f7df7954.webp",
-      "name": "Sugar Rush 1000",
-      "Name": "Sugar Rush 1000"
-    },
-    {
-      "link": "/play/",
-      "logo": "/uploads/4f9ceb4e69160e7efd56c7573c76cc93.webp",
-      "name": "Big Bass Splash",
-      "Name": "Big Bass Splash"
-    },
-    {
-      "link": "/play/",
-      "logo": "/uploads/ef1c268a1cfc04ac79c45cf3a2ae8281.webp",
-      "name": "Aviator",
-      "Name": "Aviator"
-    }
-  ],
+  "Slots": [],
   "Bonuses": [
     {
       "link": "",
@@ -229,8 +204,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-07-27T13:02:12.612Z",
+  "_generated_at": "2026-07-27T13:03:24.469Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-07-27T13:02:13.202Z",
-  "_deploy_trigger": "xpqhby"
+  "_last_deploy": "2026-07-27T13:03:25.051Z",
+  "_deploy_trigger": "vc9f0g"
 }
