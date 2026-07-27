@@ -5,7 +5,7 @@
   "url": "bizzokasyno-pl.pl",
   "template": "tupchiy",
   "language_code": "pl",
-  "allow_indexing": true,
+  "allow_indexing": false,
   "redirect_404s_to_homepage": true,
   "use_www_version": false,
   "breadcrumbs": true,
@@ -223,8 +223,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-07-27T11:11:07.784Z",
+  "_generated_at": "2026-07-27T11:24:06.000Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-07-27T11:11:08.425Z",
-  "_deploy_trigger": "zjzsqf"
+  "_last_deploy": "2026-07-27T11:24:06.791Z",
+  "_deploy_trigger": "8y2fc"
 }
