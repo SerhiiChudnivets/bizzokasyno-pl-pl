@@ -85,7 +85,7 @@
   "faq_title": "FAQ",
   "login_text": "Zaloguj się",
   "register_text": "Zarejestruj się",
-  "slots_title": "Gry dostępne w Bizzo Kasyno",
+  "slots_title": "",
   "bonus_title": "Bizzo bonusy i promocje",
   "get_bonus_btn_text": "Odbierz bonus",
   "redirect_link": "/play/",
@@ -229,8 +229,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-07-27T12:55:02.198Z",
+  "_generated_at": "2026-07-27T12:56:47.207Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-07-27T12:55:02.868Z",
-  "_deploy_trigger": "gfmpx"
+  "_last_deploy": "2026-07-27T12:56:47.761Z",
+  "_deploy_trigger": "uuovwl"
 }
