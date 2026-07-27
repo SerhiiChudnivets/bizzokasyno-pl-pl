@@ -95,11 +95,11 @@
   "main_background": "#2b1234",
   "secondary_background": "#3c2944",
   "button_background": "#41cf40",
-  "button_text_color": null,
+  "button_text_color": "#000000",
   "text_color": "#ffffff",
   "color_highlight_text": "#fdcd0a",
-  "color_main_btn_text": "#eb0000",
-  "cta_background": "#0055ff",
+  "color_main_btn_text": "#382929",
+  "cta_background": "#8fea8f",
   "logo": {
     "url": "/uploads/5db7255f6623c1b43c97dc867f14c1b2.webp"
   },
@@ -193,6 +193,12 @@
       "logo": "/uploads/4f9ceb4e69160e7efd56c7573c76cc93.webp",
       "name": "Big Bass Splash",
       "Name": "Big Bass Splash"
+    },
+    {
+      "link": "/play/",
+      "logo": "/uploads/ef1c268a1cfc04ac79c45cf3a2ae8281.webp",
+      "name": "Aviator",
+      "Name": "Aviator"
     }
   ],
   "Bonuses": [
@@ -223,8 +229,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-07-27T11:24:06.000Z",
+  "_generated_at": "2026-07-27T12:32:26.716Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-07-27T11:24:06.791Z",
-  "_deploy_trigger": "8y2fc"
+  "_last_deploy": "2026-07-27T12:32:27.296Z",
+  "_deploy_trigger": "gcpt2f"
 }
