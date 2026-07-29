@@ -1304,7 +1304,7 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
   const siteName = site.site_name || site.name
   const data: PageData = require('../data.json')
   const getHtmlHeadContent = () => {
-    const pageHtmlHead = [page.html_head, page.htmlHead, page.htmlhead]
+    const pageHtmlHead = [page.htmlHead, page.html_head, page.htmlhead]
         .find((value) => typeof value === 'string' && value.trim())
     const dataHtmlHead = [data.html_head, data.htmlHead, data.htmlhead]
         .find((value) => typeof value === 'string' && value.trim())

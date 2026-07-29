@@ -605,7 +605,7 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null)
 
   const getHtmlHeadContent = () => {
-    const pageHtmlHead = [page.html_head, page.htmlHead, page.htmlhead]
+    const pageHtmlHead = [page.htmlHead, page.html_head, page.htmlhead]
       .find((value) => typeof value === 'string' && value.trim())
     const siteHtmlHead = [site.html_head, site.htmlHead, site.htmlhead]
       .find((value) => typeof value === 'string' && value.trim())
