@@ -234,33 +234,27 @@
   "Slots": [
     {
       "link": "/play/",
-      "logo": "/uploads/bf69dc1de1f959daf8a469e031733dff.webp",
+      "logo": "/uploads/298b9572a9fd11b3036de649f1d71e09.webp",
       "name": "hr",
       "Name": "hr"
     },
     {
       "link": "/play/",
-      "logo": "/uploads/672a04bafac82bac397c4e5bb773a89f.webp",
+      "logo": "/uploads/b7ff1484ac7d6067674f7fd5e9cb6c4c.webp",
       "name": "ege",
       "Name": "ege"
     },
     {
       "link": "/play/",
-      "logo": "/uploads/c932a34fed408fb9c1fc0244d217b91b.webp",
+      "logo": "/uploads/f86162ae79302a141230bdbe0c1b7ecf.webp",
       "name": "jt",
       "Name": "jt"
     },
     {
       "link": "/play/",
-      "logo": "/uploads/5bf05f7c417802687f92671178ddb8ed.webp",
+      "logo": "/uploads/d99b1646423fe3e7d2b78855e7d9423a.webp",
       "name": "hegeea",
       "Name": "hegeea"
-    },
-    {
-      "link": "",
-      "logo": "/uploads/5e923f3177c25e9bb68a54abfcd14c8d.webp",
-      "name": "",
-      "Name": ""
     }
   ],
   "Bonuses": [
@@ -316,8 +310,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-08-12T13:17:03.351Z",
+  "_generated_at": "2026-08-12T13:20:56.954Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-08-12T13:17:04.026Z",
-  "_deploy_trigger": "pteou5"
+  "_last_deploy": "2026-08-12T13:20:57.538Z",
+  "_deploy_trigger": "kictr"
 }
