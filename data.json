@@ -260,13 +260,13 @@
   "Bonuses": [
     {
       "link": "/play/",
-      "logo": "/uploads/0289cc7092e54b5ba8bbf248bdeaf506.webp",
+      "logo": "/uploads/9007f4feb275d67c94a568be1cf47643.webp",
       "name": "Bonus do Pierwszej Wpłaty",
       "Name": "Bonus do Pierwszej Wpłaty"
     },
     {
       "link": "/play/",
-      "logo": "/uploads/ff3799c304493a4eadcd34d7ed511ace.webp",
+      "logo": "/uploads/f548ac88369dd4513ce7f723c46037c0.webp",
       "name": "tjrhhjj",
       "Name": "tjrhhjj"
     },
@@ -310,8 +310,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-08-12T12:35:36.897Z",
+  "_generated_at": "2026-08-12T12:47:50.651Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-08-12T12:35:37.427Z",
-  "_deploy_trigger": "a6ub2a"
+  "_last_deploy": "2026-08-12T12:47:51.200Z",
+  "_deploy_trigger": "tqkom"
 }
