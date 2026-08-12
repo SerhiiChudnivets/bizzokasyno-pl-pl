@@ -69,7 +69,8 @@
       "seo_title": "Bizzo Casino ™ – Oficjalna Strona w Polsce",
       "seo_description": "Odkryj Bizzo Casino – setki gier, hojne bonusy i szybkie wypłaty. Zarejestruj się już dziś i zacznij wygrywać na najlepszej platformie online!\n",
       "html_head": "<meta name=\"google-site-verification\" content=\"aQSKbCXAQq3g9gRA9KWtyiq2_AbWHwC0AvwF3Fe5Yyc\" />\n<link rel=\"canonical\" href=\"https://bizzokasyno-pl.pl/\" />\n<meta property=\"og:locale\" content=\"pl\">\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:title\" content=\"Bizzo Casino ™ – Oficjalna Strona w Polsce\">\n<meta property=\"og:description\" content=\"Odkryj Bizzo Casino – setki gier, hojne bonusy i szybkie wypłaty. Zarejestruj się już dziś i zacznij wygrywać na najlepszej platformie online!\">\n<meta property=\"og:site_name\" content=\"Bizzo Casino\">\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Bizzo Casino ™ – Oficjalna Strona w Polsce\">\n<meta name=\"twitter:description\" content=\"Odkryj Bizzo Casino – setki gier, hojne bonusy i szybkie wypłaty. Zarejestruj się już dziś i zacznij wygrywać na najlepszej platformie online!\">",
-      "faq_title": "FAQ"
+      "faq_title": "FAQ",
+      "content_alt": "bizzo bonus"
     }
   ],
   "faq_schema": {
@@ -316,8 +317,9 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-08-12T14:13:59.900Z",
+  "_generated_at": "2026-08-12T14:20:24.037Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-08-12T14:14:00.481Z",
-  "_deploy_trigger": "cigwwf"
+  "content_alt": "bizzo bonus",
+  "_last_deploy": "2026-08-12T14:20:24.611Z",
+  "_deploy_trigger": "cswtkc"
 }
