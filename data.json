@@ -220,10 +220,6 @@
     },
     {
       "link": "",
-      "image": "/uploads/61c34980600dda86ec5956f32e58a8b7.webp"
-    },
-    {
-      "link": "",
       "image": "/uploads/57286ff731a9289683de8b4742a326db.svg"
     },
     {
@@ -236,12 +232,6 @@
     }
   ],
   "Slots": [
-    {
-      "link": "/play/",
-      "logo": "/uploads/dfa983413968375842960a262b9dfa98.webp",
-      "name": "w",
-      "Name": "w"
-    },
     {
       "link": "/play/",
       "logo": "/uploads/6d947639dc178568b5f2352d5797a08c.webp",
@@ -262,21 +252,9 @@
     },
     {
       "link": "/play/",
-      "logo": "/uploads/b990234ab93d2cea5ee586ffc2507b44.webp",
-      "name": "jrsg",
-      "Name": "jrsg"
-    },
-    {
-      "link": "/play/",
       "logo": "/uploads/5bf05f7c417802687f92671178ddb8ed.webp",
       "name": "hegeea",
       "Name": "hegeea"
-    },
-    {
-      "link": "/play/",
-      "logo": "/uploads/ce1f71b3b4f187bdabd86fae0d21010a.webp",
-      "name": "ergd",
-      "Name": "ergd"
     }
   ],
   "Bonuses": [
@@ -294,18 +272,6 @@
     },
     {
       "link": "/play/",
-      "logo": "/uploads/5329e764df7fa8bf19130c92b99d291a.webp",
-      "name": "eage",
-      "Name": "eage"
-    },
-    {
-      "link": "/play/",
-      "logo": "/uploads/5bccedc84f746e1554a32812933e0f7f.webp",
-      "name": "gega",
-      "Name": "gega"
-    },
-    {
-      "link": "/play/",
       "logo": "/uploads/c61fac281b7c8b61b8e0ce16289be0fc.webp",
       "name": "agaeageagerhtrth",
       "Name": "agaeageagerhtrth"
@@ -315,6 +281,12 @@
       "logo": "/uploads/fecc4fd71c954854845b39df49bfaff3.webp",
       "name": "dregedgehbttttttttttttttttttttttedgb ge",
       "Name": "dregedgehbttttttttttttttttttttttedgb ge"
+    },
+    {
+      "link": "/play/",
+      "logo": "/uploads/b1b4cc21188d9a99d32a148853ec1fe3.svg",
+      "name": "rhhr",
+      "Name": "rhhr"
     }
   ],
   "Reviews": null,
@@ -332,8 +304,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-08-12T12:20:46.853Z",
+  "_generated_at": "2026-08-12T12:31:48.190Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-08-12T12:20:47.404Z",
-  "_deploy_trigger": "arf7l"
+  "_last_deploy": "2026-08-12T12:31:48.816Z",
+  "_deploy_trigger": "5hczg"
 }
