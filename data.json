@@ -266,6 +266,12 @@
     },
     {
       "link": "/play/",
+      "logo": "/uploads/ff3799c304493a4eadcd34d7ed511ace.webp",
+      "name": "tjrhhjj",
+      "Name": "tjrhhjj"
+    },
+    {
+      "link": "/play/",
       "logo": "/uploads/3c0c8ae14491895e3738167988dcba74.webp",
       "name": "Bonus Do Pierwszej Wpłaty w Kryptowalutach",
       "Name": "Bonus Do Pierwszej Wpłaty w Kryptowalutach"
@@ -304,8 +310,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-08-12T12:32:52.287Z",
+  "_generated_at": "2026-08-12T12:35:36.897Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-08-12T12:32:52.822Z",
-  "_deploy_trigger": "pwxr3g"
+  "_last_deploy": "2026-08-12T12:35:37.427Z",
+  "_deploy_trigger": "a6ub2a"
 }
