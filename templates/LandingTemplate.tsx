@@ -1302,9 +1302,13 @@ const styles = `
 
 export default function LandingTemplate({ page, site }: { page: PageData; site: SiteData }) {
   const siteName = site.site_name || site.name
-  const data: PageData = require('../data.json')
+  const data: SiteData = require('../data.json')
   const getHtmlHeadContent = () => {
-    const pageHtmlHead = [page.htmlHead, page.html_head, page.htmlhead]
+    const pageSlug = page.slug?.replace(/^\/|\/$/g, '')
+    const sourcePage = Array.isArray(data.pages)
+        ? data.pages.find((item) => item.slug?.replace(/^\/|\/$/g, '') === pageSlug)
+        : undefined
+    const pageHtmlHead = [sourcePage?.htmlHead, sourcePage?.html_head, sourcePage?.htmlhead, page.htmlHead, page.html_head, page.htmlhead]
         .find((value) => typeof value === 'string' && value.trim())
     const dataHtmlHead = [data.html_head, data.htmlHead, data.htmlhead]
         .find((value) => typeof value === 'string' && value.trim())
@@ -1346,6 +1350,7 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
     }
 
     const tags: React.ReactNode[] = []
+    const seenHeadTags = new Set<string>()
     const tagRegex = /<script\b([^>]*)>([\s\S]*?)<\/script>|<(meta|link)\b([^>]*)\/?>/gi
     let match: RegExpExecArray | null
 
@@ -1357,12 +1362,21 @@ export default function LandingTemplate({ page, site }: { page: PageData; site: 
 
       if (tagName === 'meta') {
         const metaName = typeof attrs.name === 'string' ? attrs.name.toLowerCase() : ''
+        const metaProperty = typeof attrs.property === 'string' ? attrs.property.toLowerCase() : ''
+        const metaHttpEquiv = typeof attrs.httpEquiv === 'string' ? attrs.httpEquiv.toLowerCase() : ''
+        const metaKey = metaName || metaProperty || metaHttpEquiv || (attrs.charSet ? 'charset' : '')
         if (metaName === 'description') continue
-        tags.push(<meta key={key} {...attrs} />)
+        if (metaKey && seenHeadTags.has(`meta:${metaKey}`)) continue
+        if (metaKey) seenHeadTags.add(`meta:${metaKey}`)
+        tags.push(<meta key={metaKey ? `meta:${metaKey}` : key} {...attrs} />)
       }
 
       if (tagName === 'link') {
-        tags.push(<link key={key} {...attrs} />)
+        const linkRel = typeof attrs.rel === 'string' ? attrs.rel.toLowerCase() : ''
+        const linkKey = linkRel === 'canonical' ? 'link:canonical' : `link:${linkRel}:${attrs.href || key}`
+        if (seenHeadTags.has(linkKey)) continue
+        seenHeadTags.add(linkKey)
+        tags.push(<link key={linkKey} {...attrs} />)
       }
 
       if (tagName === 'script') {

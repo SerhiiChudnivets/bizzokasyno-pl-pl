@@ -114,6 +114,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     }
   }
 
+  const pageProps = Object.fromEntries(
+    Object.entries(page).filter(([key, value]) =>
+      !['htmlHead', 'html_head', 'htmlhead'].includes(key) && value !== undefined
+    )
+  )
+
   const site = {
     name: data.name,
     url: data.url,
@@ -125,7 +131,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     login_text: data.login_text,
     register_text: data.register_text,
     redirect_link: data.redirect_link,
-    pages: data.pages,
     header_menu: data.header_menu,
     footer_menu: data.footer_menu,
     hero_title: data.hero_title,
@@ -142,9 +147,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     tagline: data.tagline,
     features_list: data.features_list,
     content: data.content,
-    html_head: data.html_head,
-    htmlHead: data.htmlHead,
-    htmlhead: data.htmlhead,
     seo_title: data.seo_title,
     seoTitle: data.seoTitle,
     seo_description: data.seo_description,
@@ -175,7 +177,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   return {
     props: {
-      page,
+      page: pageProps,
       site: Object.fromEntries(Object.entries(site).filter(([, value]) => value !== undefined))
     }
   }
