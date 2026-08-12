@@ -234,13 +234,13 @@
   "Slots": [
     {
       "link": "/play/",
-      "logo": "/uploads/6d947639dc178568b5f2352d5797a08c.webp",
+      "logo": "/uploads/bf69dc1de1f959daf8a469e031733dff.webp",
       "name": "hr",
       "Name": "hr"
     },
     {
       "link": "/play/",
-      "logo": "/uploads/ee702c2ac004e5e8a761a4bb41f6fbd1.webp",
+      "logo": "/uploads/672a04bafac82bac397c4e5bb773a89f.webp",
       "name": "ege",
       "Name": "ege"
     },
@@ -255,18 +255,24 @@
       "logo": "/uploads/5bf05f7c417802687f92671178ddb8ed.webp",
       "name": "hegeea",
       "Name": "hegeea"
+    },
+    {
+      "link": "",
+      "logo": "/uploads/5e923f3177c25e9bb68a54abfcd14c8d.webp",
+      "name": "",
+      "Name": ""
     }
   ],
   "Bonuses": [
     {
       "link": "/play/",
-      "logo": "/uploads/9007f4feb275d67c94a568be1cf47643.webp",
+      "logo": "",
       "name": "Bonus do Pierwszej Wpłaty",
       "Name": "Bonus do Pierwszej Wpłaty"
     },
     {
       "link": "/play/",
-      "logo": "/uploads/f548ac88369dd4513ce7f723c46037c0.webp",
+      "logo": "",
       "name": "tjrhhjj",
       "Name": "tjrhhjj"
     },
@@ -310,8 +316,8 @@
       "question": "Czy dostępny jest bonus powitalny dla nowych graczy?"
     }
   ],
-  "_generated_at": "2026-08-12T12:47:50.651Z",
+  "_generated_at": "2026-08-12T13:17:03.351Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-08-12T12:47:51.200Z",
-  "_deploy_trigger": "tqkom"
+  "_last_deploy": "2026-08-12T13:17:04.026Z",
+  "_deploy_trigger": "pteou5"
 }
