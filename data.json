@@ -274,8 +274,8 @@
   "accent_color": "#d4af37",
   "main_background": "#2b1234",
   "secondary_background": "#3c2944",
-  "button_background": "#41cf40",
-  "button_text_color": "#000000",
+  "button_background": "#09d7ca",
+  "button_text_color": "#21fd12",
   "text_color": "#ffffff",
   "color_highlight_text": "#fdcd0a",
   "color_main_btn_text": "#f60404",
@@ -428,9 +428,9 @@
   ],
   "Reviews": null,
   "FAQ": [],
-  "_generated_at": "2026-10-02T09:42:51.033Z",
+  "_generated_at": "2026-10-02T13:22:56.458Z",
   "_version": "1.0.0",
   "content_alt": "bizzo bonus",
-  "_last_deploy": "2026-10-02T09:42:51.605Z",
-  "_deploy_trigger": "7rji63"
+  "_last_deploy": "2026-10-02T13:22:57.071Z",
+  "_deploy_trigger": "83edz"
 }
