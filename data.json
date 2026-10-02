@@ -278,7 +278,7 @@
   "button_text_color": "#000000",
   "text_color": "#ffffff",
   "color_highlight_text": "#fdcd0a",
-  "color_main_btn_text": "#382929",
+  "color_main_btn_text": "#f60404",
   "cta_background": "#8fea8f",
   "logo": {
     "url": "/uploads/5db7255f6623c1b43c97dc867f14c1b2.webp"
@@ -428,9 +428,9 @@
   ],
   "Reviews": null,
   "FAQ": [],
-  "_generated_at": "2026-09-24T12:27:44.181Z",
+  "_generated_at": "2026-10-02T09:42:51.033Z",
   "_version": "1.0.0",
   "content_alt": "bizzo bonus",
-  "_last_deploy": "2026-09-24T12:27:44.931Z",
-  "_deploy_trigger": "mhyl6f"
+  "_last_deploy": "2026-10-02T09:42:51.605Z",
+  "_deploy_trigger": "7rji63"
 }
